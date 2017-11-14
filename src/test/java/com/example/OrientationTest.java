@@ -31,7 +31,5 @@ public class OrientationTest {
 		Assert.assertEquals(new Point(1,0), Orientation.S.nextPoint(p));
 		Assert.assertEquals(new Point(0,1), Orientation.W.nextPoint(p));	
 	}
-	
-	
-	
+
 }
