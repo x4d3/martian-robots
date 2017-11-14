@@ -26,17 +26,15 @@ public class Simulation {
 
 	public static Simulation parseSimulation(List<String> inputs) throws InvalidSimulationException {
 		try {
-
 			Iterator<String> iterator = inputs.iterator();
-
 			Point upperBound = parsePoint(iterator.next());
 			Grid grid = new Grid(upperBound);
 			List<Robot> robots = new ArrayList<>();
 			for (; iterator.hasNext();) {
 				// first line describe the position and orientation of the robot
-				String robotDescription = iterator.next();
+				String robotDescription = iterator.next().trim();
 				// second line contains the robot instructions
-				String instructions = iterator.next();
+				String instructions = iterator.next().trim();
 				Point position = parsePoint(robotDescription);
 				String orientationCode = robotDescription.substring(robotDescription.length() - 1);
 				Orientation orientation = Orientation.valueOf(orientationCode);
@@ -63,10 +61,10 @@ public class Simulation {
 	}
 
 	private static Point parsePoint(String input) {
-		String[] split = input.split(" ");
+		String[] split = input.split("\\s+");
 		// TODO: Handle all the validation, check the lengh of array, and that inputs are int
-		int x = Integer.parseInt(split[0]);
-		int y = Integer.parseInt(split[1]);
+		int x = Integer.parseInt(split[0].trim());
+		int y = Integer.parseInt(split[1].trim());
 		return new Point(x, y);
 	}
 
