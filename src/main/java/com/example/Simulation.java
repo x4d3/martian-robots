@@ -16,6 +16,14 @@ public class Simulation {
 		this.robots = robots;
 	}
 
+	public List<String> run() {
+		List<String> logs = new ArrayList<>();
+		for (Robot robot : robots) {
+			logs.add(robot.run(grid));
+		}
+		return logs;
+	}
+
 	public static Simulation parseSimulation(List<String> inputs) throws InvalidSimulationException {
 		try {
 

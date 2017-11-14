@@ -17,11 +17,11 @@ public class Grid {
 		return point.getX() > upperBound.getX() || point.getY() > upperBound.getY()  || point.getX() < 0 || point.getY() < 0;
 	}
 	
-	public void leaveSent(Point point){
+	public void putScent(Point point){
 		sents.add(point);
 	}
 	
-	public boolean isSentLeft(Point point){
+	public boolean hasScent(Point point){
 		return sents.contains(point);
 	}
 

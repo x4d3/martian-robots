@@ -32,5 +32,20 @@ public class SimulationTest {
 		Assert.assertEquals("LLFFFLFLFL", robot3.getInstructions());
 
 	}
+	
+	
+	@Test
+	public void run() throws InvalidSimulationException  {
+		Simulation simulation = Simulation.parseSimulation(INPUTS);
+		List<String> result = simulation.run();
+		Assert.assertEquals(3, result.size());
+		Assert.assertEquals("1 1 E", result.get(0));
+		Assert.assertEquals("3 3 N LOST", result.get(1));
+		Assert.assertEquals("2 3 S", result.get(2));
+	}
+
+		
+		
+	
 
 }
