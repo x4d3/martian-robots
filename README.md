@@ -1,6 +1,12 @@
-# martian-robots Developer Programming Problem  
+# martian-robots 
 
+## Developer Programming Problem  
 
+[![Build Status](https://travis-ci.org/reivaz/martian-robots.svg?branch=master)](https://travis-ci.org/reivaz/martian-robots)
+
+This project requires Java 8.
+
+The entry point is in [com.example.Main](src/main/java/com/example/Main.java)
 
 Execute Tests
 ```
