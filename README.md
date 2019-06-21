@@ -2,7 +2,7 @@
 
 ## Developer Programming Problem  
 
-[![Build Status](https://travis-ci.org/reivaz/martian-robots.svg?branch=master)](https://travis-ci.org/reivaz/martian-robots)
+[![Build Status](https://travis-ci.org/x4d3/martian-robots.svg?branch=master)](https://travis-ci.org/x4d3/martian-robots)
 
 This project requires Java 8.
 
